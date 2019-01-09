@@ -1,99 +1,228 @@
-@import 'compass/css3';
-
-html,
-body {
-    height: 100%;
-    max-height: 100%;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
+html, body {
+  height: 100%;
 }
 
-h1 {
-    text-align: left;
-    position: relative;
-    line-height: 1em;
-    height: 1em;
-    top: 50%;
-    left: 30%;
-    display: inline-block;
-    @include transform(translate(0%, -50%));
-    font-family: 'Times New Roman';
+.main {
+  background: url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?fit=crop&fm=jpg&h=775&q=75&w=1050") no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+.main:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 65, 54, 0.85);
 }
 
-$cursor-color: #999;
-$select-color: #E0E0E0;
-$blink-cursor-delay: 1.5s;
-
-@include keyframes(blinkCursor) {
-    0% {
-        border-left: 0.1em solid transparent;
-    }
-    50% {
-        border-left: 0.1em solid transparent;
-    }
-    51% {
-        border-left: 0.1em solid $cursor-color;
-    }
-    100% {
-        border-left: 0.1em solid $cursor-color;
-    }
+.cursor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font: 100 4rem "Avenir Next", Arial, sans-serif;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+}
+.cursor .type {
+  position: relative;
+}
+.cursor .type:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 106%;
+  -webkit-animation: highlight .5s 3s ease forwards, remove .2s 3.5s ease forwards;
+          animation: highlight .5s 3s ease forwards, remove .2s 3.5s ease forwards;
+}
+.cursor .type:after {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: -4%;
+  height: 60%;
+  width: 1px;
+  background: white;
+  -webkit-animation: pulse 1s ease infinite, type 1.3s ease forwards, delete 1.3s 3.5s ease forwards;
+          animation: pulse 1s ease infinite, type 1.3s ease forwards, delete 1.3s 3.5s ease forwards;
+}
+.cursor .type span {
+  position: relative;
+  font-weight: 500;
+  letter-spacing: -.25em;
+  opacity: 0;
+}
+.cursor .type span:nth-of-type(1) {
+  -webkit-animation: showme 100ms 150ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+          animation: showme 100ms 150ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+}
+.cursor .type span:nth-of-type(2) {
+  -webkit-animation: showme 100ms 300ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+          animation: showme 100ms 300ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+}
+.cursor .type span:nth-of-type(3) {
+  -webkit-animation: showme 100ms 450ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+          animation: showme 100ms 450ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+}
+.cursor .type span:nth-of-type(4) {
+  -webkit-animation: showme 100ms 600ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+          animation: showme 100ms 600ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+}
+.cursor .type span:nth-of-type(5) {
+  -webkit-animation: showme 100ms 750ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+          animation: showme 100ms 750ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+}
+.cursor .type span:nth-of-type(6) {
+  -webkit-animation: showme 100ms 900ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+          animation: showme 100ms 900ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+}
+.cursor .type span:nth-of-type(7) {
+  -webkit-animation: showme 100ms 1050ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+          animation: showme 100ms 1050ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+}
+.cursor .type span:nth-of-type(8) {
+  -webkit-animation: showme 100ms 1200ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
+          animation: showme 100ms 1200ms ease forwards, highlightcolor 0.5s 3s ease forwards, remove 0.2s 3.5s ease forwards;
 }
 
-#content {
-    position: absolute;
-    list-style: none;
-    display: inline-block;
-    overflow: hidden;
-    left: 100%;
-    top: 0;
-    white-space: nowrap;
+@-webkit-keyframes showme {
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-    li {
-        display: none;
-        position: relative;
-        line-height: 100%;
-
-        &.active {
-            display: inline-block;
-
-            &.typing {
-                @include opacity(0);
-            }
-        }
-    }
-
-    .fakeContent {
-        position: absolute;
-        display: inline-block;
-        left: 0;
-        top: 0;
-        height: 1em;
-
-        &:after {
-            content: '';
-            position: absolute;
-            width: 100vw;
-            height: 1em;
-            left: calc(100% - 0.1em);
-            top: 0;
-            z-index: -2;
-            border-left: 0.1em solid $cursor-color;
-            background-color: $select-color;
-            @include background-clip(padding-box);
-            @include animation(blinkCursor $blink-cursor-delay linear infinite);
-        }
-
-        &.typing:after {
-            background-color: transparent;
-            @include animation(none);
-            left: 100%;
-        }
-
-        &.selecting:after {
-            @include animation(none);
-        }
-    }
-
+@keyframes showme {
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes pulse {
+  40% {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  40% {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes type {
+  0%,    12% {
+    left: -4%;
+  }
+  12.5%, 24% {
+    left: 20%;
+  }
+  25%,   37% {
+    left: 35%;
+  }
+  37.5%, 49% {
+    left: 52%;
+  }
+  50%,   62% {
+    left: 64%;
+  }
+  62.5%, 74% {
+    left: 70%;
+  }
+  75%,   87% {
+    left: 80%;
+  }
+  87.5%, 99% {
+    left: 94%;
+  }
+  100% {
+    left: 108%;
+  }
+}
+@keyframes type {
+  0%,    12% {
+    left: -4%;
+  }
+  12.5%, 24% {
+    left: 20%;
+  }
+  25%,   37% {
+    left: 35%;
+  }
+  37.5%, 49% {
+    left: 52%;
+  }
+  50%,   62% {
+    left: 64%;
+  }
+  62.5%, 74% {
+    left: 70%;
+  }
+  75%,   87% {
+    left: 80%;
+  }
+  87.5%, 99% {
+    left: 94%;
+  }
+  100% {
+    left: 108%;
+  }
+}
+@-webkit-keyframes highlight {
+  100% {
+    background: white;
+    color: #FF4136;
+  }
+}
+@keyframes highlight {
+  100% {
+    background: white;
+    color: #FF4136;
+  }
+}
+@-webkit-keyframes highlightcolor {
+  to {
+    color: #FF4136;
+  }
+}
+@keyframes highlightcolor {
+  to {
+    color: #FF4136;
+  }
+}
+@-webkit-keyframes delete {
+  to {
+    left: -4%;
+  }
+}
+@keyframes delete {
+  to {
+    left: -4%;
+  }
+}
+@-webkit-keyframes remove {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes remove {
+  to {
+    opacity: 0;
+  }
 }
