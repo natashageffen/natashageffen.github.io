@@ -21,7 +21,7 @@ body {
   letter-spacing: .15em; /* Adjust as needed */
   border-right: orange solid;
   animation: 
-    typing 3.5s steps(36, end),
+    typing 3.5s steps(14, end),
     blink-caret .5s step-end infinite;
   font-size: 40px;
 }
