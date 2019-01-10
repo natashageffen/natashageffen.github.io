@@ -60,6 +60,10 @@ nav .active {
   font-size: 40px;
 }
 
+#about {
+font-family: monospace;
+ background: lightgray;
+}
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
