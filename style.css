@@ -26,7 +26,7 @@ body {
   font-size: 40px;
 }
 
-#about {
+#about h2{
 font-family: monospace;
  background: lightgray;
 }
@@ -39,11 +39,11 @@ font-family: monospace;
   
 }
 
-#projects{
+#projects a{
     font-family: monospace;
 }
 
-#contact{
+#contact p{
     font-family: monospace;
 }
 /* The typewriter cursor effect */
