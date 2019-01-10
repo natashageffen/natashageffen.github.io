@@ -24,6 +24,7 @@ body {
     typing 3.5s steps(14, end),
     blink-caret .5s step-end infinite;
   font-size: 40px;
+      max-width: 41%;
 }
 
 #about h2{
