@@ -41,6 +41,10 @@ font-family: monospace;
   
 }
 
+#projects{
+  margin: auto;
+}
+
 #projects a{
     font-family: monospace;
 }
@@ -52,4 +56,8 @@ font-family: monospace;
 @keyframes blink-caret {
   from, to { border-color: transparent }
   30% { border-color: white }
+}
+
+img{
+  max-width: 30%;
 }
