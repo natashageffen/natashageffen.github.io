@@ -27,11 +27,13 @@ div#home h1 {
       max-width: 33%;
 }
 
-div#about h2{
+h2{
 font-family: monospace;
  background: lightgray;
   font-family: monospace;
 }
+
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
