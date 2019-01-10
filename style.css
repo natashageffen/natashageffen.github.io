@@ -7,9 +7,9 @@ body {
 
 div#home {
   background: #333;
-  padding-top: 5em;
   display: flex;
   justify-content: center;
+  padding: 50px;
 }
 
 div#home h1 {
@@ -21,7 +21,7 @@ div#home h1 {
   letter-spacing: .15em; /* Adjust as needed */
   border-right: white solid;
   animation: 
-    typing 3.5s steps(14, end),
+    typing 3s steps(14, end),
     blink-caret .5s step-end infinite;
   font-size: 40px;
       max-width: 33%;
@@ -30,7 +30,10 @@ div#home h1 {
 h2{
 font-family: monospace;
  background: lightgray;
-  font-family: monospace;
+ margin: 0;
+ font-size: 30px;
+  padding: 25px;
+  padding-top: 80px
 }
 
 
@@ -45,6 +48,7 @@ font-family: monospace;
 
 div#projects{
   margin: auto;
+  max-width: 80%;
 }
 
 div#projects a{
@@ -61,5 +65,10 @@ div#contact p{
 }
 
 img{
-  max-width: 30%;
+  max-width: 25%;
+  padding: 20px;
+}
+
+p{
+  text-align: center;
 }
