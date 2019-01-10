@@ -26,6 +26,7 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: monospace;
 }
 
 nav li a:hover:not(.active) {
@@ -35,7 +36,6 @@ nav li a:hover:not(.active) {
 nav .active {
   background-color: white;
   color: black;
-  font-family: monospace;
 }
 
 /* home */
