@@ -6,7 +6,7 @@ body {
 /* home */
 
 div#home {
-  background: #ffefe0;
+  background: gray;
   display: flex;
   justify-content: center;
   padding: 50px;
@@ -19,7 +19,7 @@ div#home h1 {
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
-  border-right: #7d7d7d solid;
+  border-right: white solid;
   animation: 
     typing 3s steps(14, end),
     blink-caret .5s step-end infinite;
@@ -46,12 +46,12 @@ font-family: monospace;
   
 }
 div#about{
-  background-color: #fed9ca;
+  background-color: white;
 }
 div#projects{
   margin: auto;
   max-width: 80%;
-  background-color: #c5c5c5;
+  background-color: white;
 }
 
 div#projects a{
@@ -60,17 +60,17 @@ div#projects a{
 }
 
 div#contact{
-background-color: #c5c5c5;
+background-color: white;
 }
 
 div#contact p{
     font-family: monospace;
-    color: #ffefe0;
+    
 }
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  30% { border-color: #7d7d7d }
+  30% { border-color: white }
 }
 
 img{
