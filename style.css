@@ -1,6 +1,6 @@
 body {
   margin:0;
-  font-family: monospace;
+  
 }
 
 /* nav bar */
@@ -33,7 +33,9 @@ nav li a:hover:not(.active) {
 }
 
 nav .active {
-  background-color: #4CAF50;
+  background-color: white;
+  color: black;
+  font-family: monospace;
 }
 
 /* home */
