@@ -13,7 +13,7 @@ div#home {
 }
 
 div#home h1 {
-  color: #7d7d7d;
+  color: white;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
