@@ -16,7 +16,45 @@
   
   <div id="Projects">
      <h2>My Projects:</h2>
+       
+    <button class="accordion">Cat Courses</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">UVM CEMS</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button class="accordion">Boggle</button>
+<div class="panel">
+  <p>Lorem ipsum...</p>
+</div>
     
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
+    
+    <!--
+
     <button onclick="catCourses()">+ Cat Courses</button>
     
     <div style="display:none;" id="catCoursesDIV">
@@ -71,7 +109,6 @@ function boggle() {
   }
 }
 </script>
-    <!--
     <div class="container">
     <a href="https://ngeffen.w3.uvm.edu/cs148/final/index.php" target="_blank"> <img src="cat_courses.jpg" alt="Cat Courses"></a>
     <div class="middle">
