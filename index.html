@@ -16,6 +16,54 @@
   
   <div id="Projects">
      <h2>My Projects:</h2>
+    
+    <button onclick="catCourses()">+Cat Courses</button>
+    <button onclick="uvmCems()">+UVM CEMS</button>
+    <button onclick="boggle()">+Boggle</button>
+    
+    <div id="catCoursesDIV">
+ <a href="https://ngeffen.w3.uvm.edu/cs148/final/index.php" target="_blank"> <img src="cat_courses.jpg" alt="Cat Courses"></a>
+</div>
+    
+    <div id="uvmCemsDIV">
+    <a href= "https://www.uvm.edu/cems" target="_blank"> <img src="uvm_cems.jpg" alt="UVM CEMS"> </a>
+</div>
+    
+    <div id="boggleDIV">
+    <a href = "https://github.com/natashageffen/boggle" target="_blank"><img src="boggle.jpg" alt="Boggle"> </a>
+</div>
+    
+    
+    <script>
+function catCourses() {
+  var x = document.getElementById("catCoursesDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+ 
+ function uvmCems() {
+  var x = document.getElementById("uvmCemsDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+      
+function boggle() {
+  var x = document.getElementById("boggleDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+    <!--
     <div class="container">
     <a href="https://ngeffen.w3.uvm.edu/cs148/final/index.php" target="_blank"> <img src="cat_courses.jpg" alt="Cat Courses"></a>
     <div class="middle">
@@ -36,8 +84,9 @@
     <div class="middle">
     <div class="text">Java-Operated Boggle</div>
   </div>
-            </div>
 
+            </div>
+-->
     
   </div>
   
