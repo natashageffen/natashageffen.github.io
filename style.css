@@ -99,7 +99,10 @@ p{
   font-size: 20px;
 }
 
-
+p#footer{
+    font-size: 10px;
+    font-family: monospace;
+}
 .container {
   position: relative;
   width: 100%;
@@ -128,4 +131,14 @@ p{
 
 a {
   text-decoration: none;
+}
+
+
+button{
+      border: none;
+    margin-left: 100px;
+    font-family: monospace;
+    font-size: 20px;
+    padding-bottom: 15px;
+  
 }
