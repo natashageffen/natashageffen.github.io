@@ -21,18 +21,24 @@
     
     <div style="display:none;" id="catCoursesDIV">
  <a href="https://ngeffen.w3.uvm.edu/cs148/final/index.php" target="_blank"> <img src="cat_courses.jpg" alt="Cat Courses"></a>
-</div>
-    
+      <legend class = "description"> A concept website that primarily uses PHP/mySQL to read from the UVM registrar database 
+        and allows students to read and write course reviews. 
+      </legend>
+    </div>
+    </br>
     <button onclick="uvmCems()">+UVM CEMS</button>
     
     <div style="display:none;" id="uvmCemsDIV">
     <a href= "https://www.uvm.edu/cems" target="_blank"> <img src="uvm_cems.jpg" alt="UVM CEMS"> </a>
+      <legend class = "description">I am part of a web development team that consistently maintains the
+      University of Vermont College of Engineering and Mathematical Sciences website.</legend>
 </div>
-    
+  </br>
      <button onclick="boggle()">+Boggle</button>
     
     <div style="display:none;" id="boggleDIV">
     <a href = "https://github.com/natashageffen/boggle" target="_blank"><img src="boggle.jpg" alt="Boggle"> </a>
+      <legend class = "description">A java-operated game of Boggle.</legend>
 </div>
     
     
@@ -55,7 +61,7 @@ function catCourses() {
   }
 }
 
-      
+
 function boggle() {
   var x = document.getElementById("boggleDIV");
   if (x.style.display === "none") {
@@ -95,5 +101,6 @@ function boggle() {
   <div id="contact">
     <p>Connect with me on <a href="https://www.linkedin.com/in/natasha-geffen-2a27aa170" target="_blank">LinkedIn </a> or <a href = "mailto: ngeffen@uvm.edu">email me</a>!</p>
   </div>
+  <p id="footer"> Website by Natasha Geffen</p>
 </body>
 </html>
