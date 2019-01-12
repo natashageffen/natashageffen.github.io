@@ -118,13 +118,6 @@ p{
   text-align: center;
 }
 
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
 
 .text {
   font-family: monospace;
