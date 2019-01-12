@@ -27,6 +27,22 @@ div#home h1 {
       max-width: 33%;
 }
 
+@media only screen and (max-width: 1350px) {
+div#home h1 {
+      color: white;
+    font-family: monospace;
+    overflow: unset;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: normal;
+    border-right: none;
+    animation: none;
+    font-size: 40px;
+    max-width: 100%;
+  }
+}
+
+
 h2{
 font-family: monospace;
 
