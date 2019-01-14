@@ -92,6 +92,8 @@ div#contact p{
 img{
   max-width: 25%;
   padding: 20px;
+  float: left;
+  margin-left: 15%;
 }
 
 p{
@@ -144,8 +146,9 @@ a {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 20px;
   transition: 0.4s;
+  max-width: 25%;
 }
 
 .active, .accordion:hover {
@@ -170,4 +173,12 @@ a {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+p.description{
+      font-family: monospace;
+    max-width: 80%;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 15px;
 }
