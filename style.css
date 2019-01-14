@@ -150,6 +150,7 @@ a {
   transition: 0.4s;
   max-width: 25%;
   margin-left: 10%;
+  font-family: monospace;
 }
 
 .active, .accordion:hover {
