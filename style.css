@@ -149,6 +149,7 @@ a {
   font-size: 20px;
   transition: 0.4s;
   max-width: 25%;
+  margin-left: 10%;
 }
 
 .active, .accordion:hover {
@@ -182,3 +183,4 @@ p.description{
     text-align: center;
     font-size: 15px;
 }
+
