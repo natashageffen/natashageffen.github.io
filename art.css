@@ -1,6 +1,7 @@
 .column {
   max-width: 30%;
   float: left;
+  margin: auto;
 }
 
 img{
