@@ -12,3 +12,8 @@ p{
   font-family: monospace;
   text-align: center;
 }
+
+span{
+  font-size: 15px;
+  font-family: monospace;
+}
