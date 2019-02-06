@@ -8,10 +8,30 @@
       
     </head>
     <body>
-
-        <h1>main title for page</h1>
+        <div id="navbar">
+  <a href="#about">About</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+        </div>
+        <h1 id="about">main title for page</h1>
 
         <p>What ever you want to say goes here</p>
 
+        
+        <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+        
     </body>
 </html>
