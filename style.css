@@ -92,6 +92,7 @@ div#contact{
     background-color: white;
     font-family: monospace;
     padding-top: 8%;
+    display: inline-block;
     
 }
 
@@ -100,5 +101,6 @@ div#contact{
 div#footer{
     font-size: 10px;
     font-family: monospace;
+    
 }
 
