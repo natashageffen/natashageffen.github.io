@@ -37,7 +37,7 @@ text-decoration: none;
 /* home */
 
 div#home {
-  background: gray;
+  background: black;
   display: flex;
   justify-content: center;
   padding: 100px;
