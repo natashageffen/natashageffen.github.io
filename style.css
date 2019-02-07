@@ -19,15 +19,15 @@ div#navbar a{
   color: white;
 text-decoration: none;
 }
- div a#About {
+ .about {
    float: right;
   }
 
- div a#Projects {
+ .projects {
     float: right;
   }
   
- div a#contact {
+ .contact {
     float: right;
   }
 
