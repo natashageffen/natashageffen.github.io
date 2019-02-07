@@ -3,6 +3,30 @@ body {
  
 }
 
+/*nav*/
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  decoration: none;
+  background-color: black;
+  color: white;
+  font: monospace;
+  font-size: 14px;
+}
+  
+ #About {
+   float: right;
+  }
+
+  #Projects {
+    float: right;
+  }
+  
+  #contact {
+    float: right;
+  }
+
 /* home */
 
 div#home {
