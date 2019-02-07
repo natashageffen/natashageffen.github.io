@@ -89,10 +89,7 @@ img{
 /*contact*/
 
 div#contact{
-background-color: white;
-}
-
-div#contact p{
+    background-color: white;
     font-family: monospace;
     padding-top: 8%;
     
@@ -100,7 +97,7 @@ div#contact p{
 
 
 
-p#footer{
+div#footer{
     font-size: 10px;
     font-family: monospace;
 }
