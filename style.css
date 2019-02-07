@@ -10,7 +10,7 @@ div#navbar {
   width: 100%;
   decoration: none;
   background-color: black;
-  color: white;
+  padding: 20px;
   font-family: monospace;
   font-size: 20px;
 }
