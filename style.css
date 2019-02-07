@@ -21,14 +21,17 @@ text-decoration: none;
 }
  a.about {
    float: right;
+   padding-right: 50px;
   }
 
  a.projects {
     float: right;
+    padding-right: 50px;
   }
   
  a.contact {
     float: right;
+    padding-right: 50px;
   }
 
 /* home */
