@@ -37,7 +37,7 @@ div#home {
   background: gray;
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 100px;
 }
 
 div#home h1 {
