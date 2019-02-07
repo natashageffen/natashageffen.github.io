@@ -11,7 +11,7 @@ body {
   decoration: none;
   background-color: black;
   color: white;
-  font: monospace;
+  font-family: monospace;
   font-size: 14px;
 }
   
@@ -91,6 +91,13 @@ font-family: monospace;
 div#about{
   background-color: white;
 }
+
+#arrow {
+  color: white;
+  font-family;
+  text-align: center;
+}
+
 div#projects{
   margin: auto;
   max-width: 80%;
